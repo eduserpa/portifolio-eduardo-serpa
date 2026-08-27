@@ -27,6 +27,8 @@ export default {
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
       },
       keyframes: {
         marquee: {
@@ -45,6 +47,16 @@ export default {
           "15%, 35%": { transform: "translateZ(0) rotate(90deg)" },
           "65%, 85%": { transform: "translateZ(0) rotate(270deg)" },
           "100%": { transform: "translateZ(0) rotate(360deg)" },
+        },
+        "border-beam": {
+          "100%": { offsetDistance: "100%" },
+        },
+        orbit: {
+          "0%": { transform: "rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))" },
+          "100%": {
+            transform:
+              "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
+          },
         },
       },
     },

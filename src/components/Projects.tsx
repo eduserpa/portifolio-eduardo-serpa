@@ -20,7 +20,8 @@ export function Projects() {
       href: p.href,
       featured: p.featured,
       colSpan: p.colSpan,
-      icon: <Icon className="h-5 w-5 stroke-[1.5] text-text-faint transition-colors group-hover:text-lime" />,
+      chrome: "browser",
+      icon: <Icon className="h-[18px] w-[18px] stroke-[1.5]" />,
     };
   });
 

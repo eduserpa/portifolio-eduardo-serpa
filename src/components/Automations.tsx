@@ -11,7 +11,8 @@ export function Automations() {
     href: a.href,
     featured: a.featured,
     colSpan: a.colSpan,
-    icon: <Terminal className="h-5 w-5 stroke-[1.5] text-text-faint transition-colors group-hover:text-lime" />,
+    chrome: "terminal",
+    icon: <Terminal className="h-[18px] w-[18px] stroke-[1.5]" />,
   }));
 
   return (
@@ -37,7 +38,7 @@ export function Automations() {
       </Reveal>
 
       <Reveal delay={0.1} className="mt-10">
-        <BentoGrid items={items} cardClassName="p-5" />
+        <BentoGrid items={items} />
       </Reveal>
 
       <a

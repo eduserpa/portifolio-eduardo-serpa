@@ -4,6 +4,8 @@ import { Tilt } from "./ui/tilt";
 import { Spotlight } from "./ui/spotlight";
 import { TextReveal } from "./ui/text-reveal";
 import { ShimmerButton } from "./ui/shimmer-button";
+import { BorderBeam } from "./ui/border-beam";
+import { PhotoOrbit } from "./ui/photo-orbit";
 
 export function Hero() {
   return (
@@ -108,9 +110,12 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="relative justify-self-center"
         >
-          <Tilt rotationFactor={10} springOptions={{ stiffness: 150, damping: 15 }} className="group relative rounded-[20px]">
+          <PhotoOrbit className="hidden sm:block" />
+
+          <Tilt rotationFactor={10} springOptions={{ stiffness: 150, damping: 15 }} className="group relative z-10 rounded-[20px]">
             <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={280} />
             <div className="relative aspect-[4/5] w-[min(340px,72vw)] overflow-hidden rounded-[20px] border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
+              <BorderBeam size={160} duration={7} borderWidth={1.5} />
               <div className="pointer-events-none absolute inset-0 z-10 mix-blend-overlay [background:linear-gradient(200deg,rgba(204,236,123,0.16),rgba(12,13,17,0.15)_45%,rgba(232,166,89,0.10))]" />
               <img
                 src="/eduardo.jpg"
@@ -121,7 +126,7 @@ export function Hero() {
               />
             </div>
           </Tilt>
-          <span className="absolute -bottom-[18px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber px-3.5 py-1.5 font-mono text-xs text-bg">
+          <span className="absolute -bottom-[18px] left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber px-3.5 py-1.5 font-mono text-xs text-bg">
             // status: disponível
           </span>
         </motion.div>

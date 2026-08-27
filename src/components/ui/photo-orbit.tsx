@@ -31,10 +31,10 @@ export function PhotoOrbit({ className }: { className?: string }) {
         style={{ width: outerRadius * 2, height: outerRadius * 2 }}
       />
       {inner.map(({ Icon, angle }, i) => (
-        <OrbitingIcon key={`inner-${i}`} Icon={Icon} angle={angle} radius={innerRadius} duration={26} size={52} />
+        <OrbitingIcon key={`inner-${i}`} Icon={Icon} angle={angle} radius={innerRadius} duration={26} size={48} />
       ))}
       {outer.map(({ Icon, angle }, i) => (
-        <OrbitingIcon key={`outer-${i}`} Icon={Icon} angle={angle} radius={outerRadius} duration={38} reverse size={46} />
+        <OrbitingIcon key={`outer-${i}`} Icon={Icon} angle={angle} radius={outerRadius} duration={38} reverse size={48} />
       ))}
     </div>
   );

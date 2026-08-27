@@ -127,14 +127,14 @@ export function Hero() {
             style={{ width: "min(560px,88vw)", height: "min(560px,88vw)" }}
           >
             <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={300} />
-            <div className="relative h-full w-full overflow-hidden rounded-full border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
+            <div className="relative h-full w-full overflow-hidden rounded-full border-[6px] border-bg shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
               <div className="pointer-events-none absolute inset-0 z-10 mix-blend-overlay [background:linear-gradient(200deg,rgba(204,236,123,0.16),rgba(12,13,17,0.15)_45%,rgba(232,166,89,0.10))]" />
               <img
                 src="/eduardo.jpg"
                 alt="Retrato de Eduardo Serpa"
                 width={560}
                 height={560}
-                className="h-full w-full object-cover [filter:grayscale(0.15)_contrast(1.05)]"
+                className="h-full w-full object-cover object-[center_15%] [filter:grayscale(0.15)_contrast(1.05)]"
               />
             </div>
           </Tilt>

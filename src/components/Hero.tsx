@@ -5,6 +5,7 @@ import { Spotlight } from "./ui/spotlight";
 import { TextReveal } from "./ui/text-reveal";
 import { ShimmerButton } from "./ui/shimmer-button";
 import { PhotoOrbit } from "./ui/photo-orbit";
+import { GlowEffect } from "./ui/glow-effect";
 
 export function Hero() {
   return (
@@ -113,24 +114,26 @@ export function Hero() {
 
           <div
             aria-hidden
-            className="absolute inset-0 m-auto rounded-full [background:conic-gradient(from_0deg,#CCEC7B,#E8A659,#CCEC7B40,#CCEC7B)] [animation:spin_7s_linear_infinite]"
-            style={{ width: "calc(min(420px,78vw) + 16px)", height: "calc(min(420px,78vw) + 16px)" }}
-          />
+            className="absolute inset-0 m-auto"
+            style={{ width: "calc(min(480px,84vw) + 70px)", height: "calc(min(480px,84vw) + 70px)" }}
+          >
+            <GlowEffect mode="rotate" duration={6} blur="strong" className="rounded-full" />
+          </div>
 
           <Tilt
             rotationFactor={10}
             springOptions={{ stiffness: 150, damping: 15 }}
             className="group relative z-10 mx-auto rounded-full"
-            style={{ width: "min(420px,78vw)", height: "min(420px,78vw)" }}
+            style={{ width: "min(480px,84vw)", height: "min(480px,84vw)" }}
           >
-            <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={280} />
+            <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={300} />
             <div className="relative h-full w-full overflow-hidden rounded-full border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
               <div className="pointer-events-none absolute inset-0 z-10 mix-blend-overlay [background:linear-gradient(200deg,rgba(204,236,123,0.16),rgba(12,13,17,0.15)_45%,rgba(232,166,89,0.10))]" />
               <img
                 src="/eduardo.jpg"
                 alt="Retrato de Eduardo Serpa"
-                width={420}
-                height={420}
+                width={480}
+                height={480}
                 className="h-full w-full object-cover [filter:grayscale(0.15)_contrast(1.05)]"
               />
             </div>

@@ -15,8 +15,8 @@ const outer = [
 ];
 
 export function PhotoOrbit({ className }: { className?: string }) {
-  const innerRadius = 255;
-  const outerRadius = 310;
+  const innerRadius = 300;
+  const outerRadius = 365;
 
   return (
     <div aria-hidden className={cn("pointer-events-none absolute inset-0 z-0", className)}>
@@ -31,10 +31,10 @@ export function PhotoOrbit({ className }: { className?: string }) {
         style={{ width: outerRadius * 2, height: outerRadius * 2 }}
       />
       {inner.map(({ Icon, angle }, i) => (
-        <OrbitingIcon key={`inner-${i}`} Icon={Icon} angle={angle} radius={innerRadius} duration={26} size={38} />
+        <OrbitingIcon key={`inner-${i}`} Icon={Icon} angle={angle} radius={innerRadius} duration={26} size={52} />
       ))}
       {outer.map(({ Icon, angle }, i) => (
-        <OrbitingIcon key={`outer-${i}`} Icon={Icon} angle={angle} radius={outerRadius} duration={38} reverse size={34} />
+        <OrbitingIcon key={`outer-${i}`} Icon={Icon} angle={angle} radius={outerRadius} duration={38} reverse size={46} />
       ))}
     </div>
   );

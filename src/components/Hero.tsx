@@ -5,7 +5,7 @@ import { Spotlight } from "./ui/spotlight";
 import { TextReveal } from "./ui/text-reveal";
 import { ShimmerButton } from "./ui/shimmer-button";
 import { PhotoOrbit } from "./ui/photo-orbit";
-import { GlowEffect } from "./ui/glow-effect";
+import { CircularBorderBeam } from "./ui/circular-border-beam";
 
 export function Hero() {
   return (
@@ -112,13 +112,7 @@ export function Hero() {
         >
           <PhotoOrbit className="hidden sm:block" />
 
-          <div
-            aria-hidden
-            className="absolute inset-0 m-auto"
-            style={{ width: "calc(min(560px,88vw) + 70px)", height: "calc(min(560px,88vw) + 70px)" }}
-          >
-            <GlowEffect mode="rotate" duration={6} blur="strong" className="rounded-full" />
-          </div>
+          <CircularBorderBeam size={620} ringWidth={5} duration={5} className="opacity-90" />
 
           <Tilt
             rotationFactor={10}

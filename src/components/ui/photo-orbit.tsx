@@ -15,8 +15,8 @@ const outer = [
 ];
 
 export function PhotoOrbit({ className }: { className?: string }) {
-  const innerRadius = 235;
-  const outerRadius = 285;
+  const innerRadius = 255;
+  const outerRadius = 310;
 
   return (
     <div aria-hidden className={cn("pointer-events-none absolute inset-0 z-0", className)}>

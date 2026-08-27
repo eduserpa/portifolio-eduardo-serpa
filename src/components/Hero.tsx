@@ -4,7 +4,6 @@ import { Tilt } from "./ui/tilt";
 import { Spotlight } from "./ui/spotlight";
 import { TextReveal } from "./ui/text-reveal";
 import { ShimmerButton } from "./ui/shimmer-button";
-import { BorderBeam } from "./ui/border-beam";
 import { PhotoOrbit } from "./ui/photo-orbit";
 
 export function Hero() {
@@ -20,7 +19,7 @@ export function Hero() {
         className="pointer-events-none absolute -right-32 bottom-0 h-[380px] w-[380px] rounded-full bg-amber/10 blur-[120px]"
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1120px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.3fr_0.9fr] lg:gap-20">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1160px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -112,21 +111,31 @@ export function Hero() {
         >
           <PhotoOrbit className="hidden sm:block" />
 
-          <Tilt rotationFactor={10} springOptions={{ stiffness: 150, damping: 15 }} className="group relative z-10 rounded-[20px]">
+          <div
+            aria-hidden
+            className="absolute inset-0 m-auto rounded-full [background:conic-gradient(from_0deg,#CCEC7B,#E8A659,#CCEC7B40,#CCEC7B)] [animation:spin_7s_linear_infinite]"
+            style={{ width: "calc(min(420px,78vw) + 16px)", height: "calc(min(420px,78vw) + 16px)" }}
+          />
+
+          <Tilt
+            rotationFactor={10}
+            springOptions={{ stiffness: 150, damping: 15 }}
+            className="group relative z-10 mx-auto rounded-full"
+            style={{ width: "min(420px,78vw)", height: "min(420px,78vw)" }}
+          >
             <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={280} />
-            <div className="relative aspect-[4/5] w-[min(340px,72vw)] overflow-hidden rounded-[20px] border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
-              <BorderBeam size={160} duration={7} borderWidth={1.5} />
+            <div className="relative h-full w-full overflow-hidden rounded-full border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
               <div className="pointer-events-none absolute inset-0 z-10 mix-blend-overlay [background:linear-gradient(200deg,rgba(204,236,123,0.16),rgba(12,13,17,0.15)_45%,rgba(232,166,89,0.10))]" />
               <img
                 src="/eduardo.jpg"
                 alt="Retrato de Eduardo Serpa"
-                width={340}
-                height={425}
+                width={420}
+                height={420}
                 className="h-full w-full object-cover [filter:grayscale(0.15)_contrast(1.05)]"
               />
             </div>
           </Tilt>
-          <span className="absolute -bottom-[18px] left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber px-3.5 py-1.5 font-mono text-xs text-bg">
+          <span className="absolute -bottom-2 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber px-3.5 py-1.5 font-mono text-xs text-bg">
             // status: disponível
           </span>
         </motion.div>

@@ -18,12 +18,12 @@ export function Automations() {
   return (
     <section id="automacoes" className="mx-auto max-w-[1120px] border-t border-line-soft px-6 py-24 sm:px-10">
       <Reveal>
-        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">05 — Automações</span>
+        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">05 / Automações</span>
         <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
           Integrações e automações que publiquei em código aberto.
         </h2>
         <p className="mt-3.5 max-w-[720px] text-[15px] text-text-dim">
-          Ferramentas que construí para resolver dores reais de operação — Shopify, TalentLMS, ActiveCampaign e
+          Ferramentas que construí para resolver dores reais de operação: Shopify, TalentLMS, ActiveCampaign e
           SharePoint conversando entre si. Código no{" "}
           <a
             href="https://github.com/eduserpa"

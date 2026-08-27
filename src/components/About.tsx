@@ -13,7 +13,7 @@ export function About() {
   return (
     <section id="sobre" className="mx-auto max-w-[1120px] border-t border-line-soft px-6 py-24 sm:px-10">
       <Reveal>
-        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">01 — Sobre</span>
+        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">01 / Sobre</span>
         <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
           Da concepção à operação, sem soltar a mão do processo.
         </h2>
@@ -22,13 +22,13 @@ export function About() {
       <Reveal delay={0.1} className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr]">
         <div>
           <p className="text-[19px] leading-[1.65] text-text">
-            Atuo com e-commerce há cinco anos — temas, catálogo, SEO e integrações no Shopify — e sou pós-graduado em
+            Atuo com e-commerce há cinco anos, com temas, catálogo, SEO e integrações no Shopify, e sou pós-graduado em
             Inteligência Artificial pela UFPR. Uso desenvolvimento assistido por IA para tirar soluções do papel:
             concebo a arquitetura, dirijo a construção, valido cada etapa e opero o resultado.
           </p>
           <p className="mt-4.5 text-[15px] text-text-dim">
-            Hoje, no trabalho autônomo, construo uma plataforma que sincroniza Shopify, ERP fiscal e CRM — com proteção
-            anti-loop e nenhuma escrita externa sem confirmação explícita — além de um pipeline em Python/Blender que
+            Hoje, no trabalho autônomo, construo uma plataforma que sincroniza Shopify, ERP fiscal e CRM, com proteção
+            anti-loop e nenhuma escrita externa sem confirmação explícita, além de um pipeline em Python/Blender que
             transforma arquivos CAD em imagens de catálogo validadas contra desenho técnico.
           </p>
         </div>

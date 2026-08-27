@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import { Tilt } from "./tilt";
 import { Spotlight } from "./spotlight";
-import { BorderBeam } from "./border-beam";
 
 export interface BentoItem {
   title: string;
@@ -53,7 +52,6 @@ export function BentoGrid({
                 cardClassName
               )}
             >
-              {item.featured && <BorderBeam size={130} duration={7} borderWidth={1.5} />}
               <Spotlight className="z-0 from-lime/25 via-lime/5 to-transparent" size={260} />
 
               {item.chrome && (

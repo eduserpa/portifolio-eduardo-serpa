@@ -9,7 +9,7 @@ export function Experience() {
   return (
     <section id="experiencia" className="mx-auto max-w-[1120px] border-t border-line-soft px-6 py-24 sm:px-10">
       <Reveal>
-        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">03 — Experiência</span>
+        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">03 / Experiência</span>
         <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
           Uma trajetória construída em cima do próprio e-commerce.
         </h2>

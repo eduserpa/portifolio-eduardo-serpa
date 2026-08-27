@@ -18,9 +18,9 @@ export function Contact() {
   return (
     <section id="contato" className="mx-auto max-w-[1120px] border-t border-line-soft px-6 py-24 sm:px-10">
       <Reveal>
-        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">07 — Contato</span>
+        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">07 / Contato</span>
         <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
-          Aberto a CLT ou PJ — remoto, híbrido ou presencial.
+          Aberto a CLT ou PJ, remoto, híbrido ou presencial.
         </h2>
         <p className="mt-3.5 max-w-[720px] text-[15px] text-text-dim">
           Se meu perfil faz sentido pra sua vaga ou projeto, vamos conversar.

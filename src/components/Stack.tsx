@@ -10,7 +10,7 @@ export function Stack() {
     <section id="stack" className="border-t border-line-soft px-6 py-24 sm:px-10">
       <div className="mx-auto max-w-[1120px]">
         <Reveal>
-          <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">02 — Stack</span>
+          <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">02 / Stack</span>
           <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
             Ferramentas que uso no dia a dia.
           </h2>

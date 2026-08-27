@@ -28,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-4 font-mono text-[13px] uppercase tracking-[0.12em] text-amber"
           >
-            Indaiatuba, SP — Brasil
+            Indaiatuba, SP, Brasil
           </motion.p>
 
           <h1 className="text-[clamp(48px,7.5vw,92px)] font-bold leading-[0.98]">

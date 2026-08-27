@@ -28,7 +28,7 @@ export function Projects() {
   return (
     <section id="projetos" className="mx-auto max-w-[1120px] border-t border-line-soft px-6 py-24 sm:px-10">
       <Reveal>
-        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">04 — Projetos</span>
+        <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-amber">04 / Projetos</span>
         <h2 className="mt-2.5 max-w-[720px] text-[clamp(26px,3.4vw,38px)] font-semibold">
           Cases reais, muitos construídos na Lucerpy.
         </h2>

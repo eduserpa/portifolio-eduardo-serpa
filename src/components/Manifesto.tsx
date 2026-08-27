@@ -36,7 +36,7 @@ export function Manifesto() {
           speedReveal={0.9}
           className="text-[clamp(28px,4.6vw,52px)] font-display font-semibold leading-[1.15] text-text"
         >
-          Concebo, construo com IA, valido e opero — sem soltar a mão do processo em nenhuma etapa.
+          Concebo, construo com IA, valido e opero sem soltar a mão do processo em nenhuma etapa.
         </TextReveal>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-2 font-mono text-sm text-text-dim">

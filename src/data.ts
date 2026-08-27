@@ -66,28 +66,28 @@ export const stackTicker = [
 
 export const timeline = [
   {
-    when: "jan 2026 — hoje",
-    title: "Projetos Próprios — E-commerce, IA Aplicada & Automação",
+    when: "jan 2026 a hoje",
+    title: "Projetos Próprios: E-commerce, IA Aplicada & Automação",
     body: "Arquitetura hexagonal em Node.js/TypeScript/Fastify; motor de sincronização Shopify ↔ ERP ↔ CRM com proteção anti-loop em 3 camadas; cotação B2B assíncrona via Storefront API; app embutido no Shopify Admin; pipeline de IA & 3D (Python/Blender) para converter CAD em render de catálogo.",
   },
   {
-    when: "ago 2024 — hoje",
-    title: "Blog Guia LMS — Administrador de Site WordPress",
+    when: "ago 2024 a hoje",
+    title: "Blog Guia LMS: Administrador de Site WordPress",
     body: "Criação, manutenção e SEO on-page do site institucional; personalização de temas com Elementor; integrações com automação de marketing e CRM.",
   },
   {
-    when: "mai 2024 — hoje",
-    title: "Torqx Testing Equipment — Desenvolvedor Shopify",
+    when: "mai 2024 a hoje",
+    title: "Torqx Testing Equipment: Desenvolvedor Shopify",
     body: "Interfaces personalizadas em Liquid, HTML, CSS e JavaScript; gestão de catálogo, pagamentos, fretes e integrações com apps da Shopify; SEO on-page.",
   },
   {
-    when: "mai 2021 — mai 2026",
-    title: "Werkey — Especialista Técnico",
+    when: "mai 2021 a mai 2026",
+    title: "Werkey: Especialista Técnico",
     body: "Desenvolvimento web com HTML5/CSS3/JS; Shopify e ActiveCampaign para e-commerce e automação de marketing; suporte omnicanal com Zendesk; conteúdo com IA (ChatGPT, ElevenLabs, HeyGen).",
   },
   {
-    when: "jul 2015 — set 2020",
-    title: "ArtPell Papelaria e Informática — Auxiliar do Comércio",
+    when: "jul 2015 a set 2020",
+    title: "ArtPell Papelaria e Informática: Auxiliar do Comércio",
     body: "Início de trajetória, atendimento e comércio.",
   },
 ];
@@ -202,11 +202,11 @@ export const education = {
   academic: [
     {
       title: "Pós-graduação, Inteligência Artificial",
-      sub: "Universidade Federal do Paraná — fev 2024 a mar 2026",
+      sub: "Universidade Federal do Paraná, fev 2024 a mar 2026",
     },
     {
       title: "Tecnólogo, Gestão de Redes e Segurança de Sistemas",
-      sub: "FATEC-SP — 2019 a dez 2022",
+      sub: "FATEC-SP, 2019 a dez 2022",
     },
   ],
   certifications: [

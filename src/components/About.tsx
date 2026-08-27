@@ -1,5 +1,6 @@
 import { Lightbulb, Code2, ShieldCheck, Gauge } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { CountUp } from "./ui/count-up";
 
 const process = [
   { icon: Lightbulb, title: "Concepção", body: "Entendo o problema e desenho a arquitetura da solução." },
@@ -33,7 +34,9 @@ export function About() {
         </div>
         <div className="flex flex-col gap-5 border-t border-line pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
           <div className="flex flex-col">
-            <strong className="font-display text-[26px] text-lime">5+</strong>
+            <strong className="flex items-baseline font-display text-[26px] text-lime">
+              <CountUp to={5} duration={1.6} />+
+            </strong>
             <span className="text-[13px] text-text-faint">anos com Shopify</span>
           </div>
           <div className="flex flex-col">

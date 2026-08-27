@@ -112,16 +112,15 @@ export function Hero() {
         >
           <PhotoOrbit className="hidden sm:block" />
 
-          <CircularBorderBeam size={620} ringWidth={5} duration={5} className="opacity-90" />
-
           <Tilt
             rotationFactor={10}
             springOptions={{ stiffness: 150, damping: 15 }}
             className="group relative z-10 mx-auto rounded-full"
             style={{ width: "min(560px,88vw)", height: "min(560px,88vw)" }}
           >
+            <CircularBorderBeam ringWidth={4} duration={4} />
             <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={300} />
-            <div className="relative h-full w-full overflow-hidden rounded-full border-[6px] border-bg shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
+            <div className="absolute inset-2 overflow-hidden rounded-full border-[4px] border-bg shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
               <div className="pointer-events-none absolute inset-0 z-10 mix-blend-overlay [background:linear-gradient(200deg,rgba(204,236,123,0.16),rgba(12,13,17,0.15)_45%,rgba(232,166,89,0.10))]" />
               <img
                 src="/eduardo.jpg"

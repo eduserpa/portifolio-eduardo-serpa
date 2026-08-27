@@ -45,6 +45,7 @@
     <symbol id="i-proj-dash" viewBox="0 0 48 32"><rect x="1" y="1" width="46" height="30" rx="4" /><rect x="9" y="8" width="12" height="8" rx="1.4" /><rect x="24" y="8" width="15" height="4" rx="1" /><rect x="24" y="15" width="15" height="4" rx="1" /><rect x="9" y="20" width="30" height="4" rx="1" /></symbol>
     <symbol id="i-proj-building" viewBox="0 0 48 32"><rect x="1" y="1" width="46" height="30" rx="4" /><rect x="16" y="7" width="16" height="19" /><path d="M20 11h2M26 11h2M20 15h2M26 15h2M20 19h2M26 19h2" /></symbol>
     <symbol id="i-proj-shirt" viewBox="0 0 48 32"><rect x="1" y="1" width="46" height="30" rx="4" /><path d="M18 8 12 11v4h3v10h18V15h3v-4l-6-3-3 2.4h-6Z" /></symbol>
+    <symbol id="i-proj-code" viewBox="0 0 48 32"><rect x="1" y="1" width="46" height="30" rx="4" /><path d="m17 11-6 5 6 5M31 11l6 5-6 5M23 9l-2 14" /></symbol>
   </defs>
 </svg>
 
@@ -55,6 +56,7 @@
     <a href="#stack">Stack</a>
     <a href="#experiencia">Experiência</a>
     <a href="#projetos">Projetos</a>
+    <a href="#automacoes">Automações</a>
     <a href="#contato" class="nav-cta">Contato</a>
   </nav>
 </header>
@@ -94,7 +96,7 @@
 
       <div class="hero-photo">
         <div class="photo-frame">
-          <img src="assets/eduardo.jpg" alt="Retrato de Eduardo Serpa">
+          <img src="assets/eduardo.jpg" alt="Retrato de Eduardo Serpa" width="340" height="425">
         </div>
         <span class="photo-tag">// status: disponível</span>
       </div>
@@ -315,10 +317,87 @@
     <a class="all-projects" href="https://lucerpy.com.br/projetos" target="_blank" rel="noopener">Ver portfólio completo na Lucerpy ↗</a>
   </section>
 
+  <!-- AUTOMAÇÕES -->
+  <section id="automacoes" class="section reveal">
+    <div class="section-head">
+      <span class="eyebrow">05 — Automações</span>
+      <h2>Integrações e automações que publiquei em código aberto.</h2>
+      <p class="section-sub">Ferramentas que construí para resolver dores reais de operação — Shopify, TalentLMS, ActiveCampaign e SharePoint conversando entre si. Código no <a href="https://github.com/eduserpa" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
+    <div class="project-grid automations-grid">
+
+      <a class="project-card featured" href="https://github.com/eduserpa/acme-sync" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Integração</span>
+        <h3>acme-sync</h3>
+        <p>Serviço de integração Shopify ↔ Bling ↔ HubSpot em Node/TypeScript (amostra de portfólio, sanitizada).</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card featured" href="https://github.com/eduserpa/acme-image-factory" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">IA &amp; 3D</span>
+        <h3>acme-image-factory</h3>
+        <p>Pipeline de imagens/AR para peças técnicas com Blender e FreeCAD, em Python (amostra de portfólio, sanitizada).</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/shopify-talentlms-sso-sync" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">SSO</span>
+        <h3>shopify-talentlms-sso-sync</h3>
+        <p>SSO entre Shopify e TalentLMS: casa clientes por e-mail e gera link de auto-login via tag.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/talentlms-shopify-sync" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Integração</span>
+        <h3>talentlms-shopify-sync</h3>
+        <p>Sincroniza a estrutura de cursos do TalentLMS com metafields de produto no Shopify.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/voucher-generator-hub" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Automação</span>
+        <h3>voucher-generator-hub</h3>
+        <p>Gera códigos de desconto Shopify de uso único a partir de catálogo no SharePoint, com trilha de auditoria.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/talentlms-status-checker" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Automação</span>
+        <h3>talentlms-status-checker</h3>
+        <p>Verifica status de matrícula e conclusão no TalentLMS para um lote de e-mail + SKU.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/shopify-active-products-export" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Export</span>
+        <h3>shopify-active-products-export</h3>
+        <p>Exporta produtos ativos e variantes do Shopify para CSV, pronto pro Excel.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+      <a class="project-card" href="https://github.com/eduserpa/activecampaign-notes-export" target="_blank" rel="noopener">
+        <svg class="project-thumb"><use href="#i-proj-code"/></svg>
+        <span class="tag">Export</span>
+        <h3>activecampaign-notes-export</h3>
+        <p>Exporta todas as notas do ActiveCampaign para CSV com nome de deal/contato resolvido.</p>
+        <span class="project-link">Ver no GitHub ↗</span>
+      </a>
+
+    </div>
+    <a class="all-projects" href="https://github.com/eduserpa?tab=repositories" target="_blank" rel="noopener">Ver todos os repositórios no GitHub ↗</a>
+  </section>
+
   <!-- FORMAÇÃO -->
   <section id="formacao" class="section reveal">
     <div class="section-head">
-      <span class="eyebrow">05 — Formação &amp; Certificações</span>
+      <span class="eyebrow">06 — Formação &amp; Certificações</span>
       <h2>Base técnica construída com constância.</h2>
     </div>
     <div class="edu-grid">
@@ -345,7 +424,7 @@
   <!-- CONTATO -->
   <section id="contato" class="section reveal contact">
     <div class="section-head">
-      <span class="eyebrow">06 — Contato</span>
+      <span class="eyebrow">07 — Contato</span>
       <h2>Aberto a CLT ou PJ — remoto, híbrido ou presencial.</h2>
       <p class="section-sub">Se meu perfil faz sentido pra sua vaga ou projeto, vamos conversar.</p>
     </div>

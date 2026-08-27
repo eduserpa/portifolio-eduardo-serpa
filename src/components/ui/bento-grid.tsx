@@ -48,8 +48,8 @@ export function BentoGrid({
               springOptions={{ stiffness: 220, damping: 20 }}
               className={cn(
                 "group relative flex h-full flex-col overflow-hidden rounded-2xl border transition-colors duration-300",
-                "border-line bg-bg-card",
-                item.featured ? "border-lime/30" : "hover:border-lime/60",
+                "bg-bg-card hover:border-lime/60",
+                item.featured ? "border-lime/35" : "border-lime/15",
                 cardClassName
               )}
             >

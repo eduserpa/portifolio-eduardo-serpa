@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { useInView } from "framer-motion";
 import { TextReveal } from "./ui/text-reveal";
 import GradientRevealText, { type GradientRevealTextRef } from "./ui/gradient-reveal-text";
+import { ShaderBackground } from "./ui/shader-background";
 
 export function Manifesto() {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,7 +25,8 @@ export function Manifesto() {
 
   return (
     <section className="relative overflow-hidden border-t border-line-soft px-6 py-28 sm:px-10">
-      <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/[0.04] blur-[140px]" />
+      <ShaderBackground className="pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_60%_70%_at_50%_50%,black,transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-bg/40" />
       <div ref={ref} className="relative mx-auto max-w-[880px] text-center">
         <TextReveal
           as="p"

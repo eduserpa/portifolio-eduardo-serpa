@@ -20,7 +20,7 @@ export function Hero() {
         className="pointer-events-none absolute -right-32 bottom-0 h-[380px] w-[380px] rounded-full bg-amber/10 blur-[120px]"
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1160px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1160px] grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-12">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -115,7 +115,7 @@ export function Hero() {
           <div
             aria-hidden
             className="absolute inset-0 m-auto"
-            style={{ width: "calc(min(480px,84vw) + 70px)", height: "calc(min(480px,84vw) + 70px)" }}
+            style={{ width: "calc(min(560px,88vw) + 70px)", height: "calc(min(560px,88vw) + 70px)" }}
           >
             <GlowEffect mode="rotate" duration={6} blur="strong" className="rounded-full" />
           </div>
@@ -124,7 +124,7 @@ export function Hero() {
             rotationFactor={10}
             springOptions={{ stiffness: 150, damping: 15 }}
             className="group relative z-10 mx-auto rounded-full"
-            style={{ width: "min(480px,84vw)", height: "min(480px,84vw)" }}
+            style={{ width: "min(560px,88vw)", height: "min(560px,88vw)" }}
           >
             <Spotlight className="z-20 from-lime/50 via-lime/15 to-transparent blur-2xl" size={300} />
             <div className="relative h-full w-full overflow-hidden rounded-full border border-line shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
@@ -132,8 +132,8 @@ export function Hero() {
               <img
                 src="/eduardo.jpg"
                 alt="Retrato de Eduardo Serpa"
-                width={480}
-                height={480}
+                width={560}
+                height={560}
                 className="h-full w-full object-cover [filter:grayscale(0.15)_contrast(1.05)]"
               />
             </div>

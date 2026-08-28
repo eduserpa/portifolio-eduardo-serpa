@@ -92,7 +92,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.35 }}
             className="flex flex-wrap gap-5 font-mono text-[13.5px] text-text-dim"
           >
-            <a href="https://www.linkedin.com/in/eduardoserpa" target="_blank" rel="noopener" className="hover:text-lime">
+            <a href="https://www.linkedin.com/in/eduardo-serpa" target="_blank" rel="noopener" className="hover:text-lime">
               LinkedIn ↗
             </a>
             <a href="https://github.com/eduserpa" target="_blank" rel="noopener" className="hover:text-lime">

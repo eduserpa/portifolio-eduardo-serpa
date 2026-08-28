@@ -7,7 +7,7 @@ const items = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "/in/eduardoserpa ↗",
+    value: "/in/eduardo-serpa ↗",
     href: "https://www.linkedin.com/in/eduardo-serpa",
     external: true,
   },
